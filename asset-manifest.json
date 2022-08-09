@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/digital-agency/static/css/main.5afbb6c4.css",
+    "main.js": "/digital-agency/static/js/main.342c897a.js",
+    "static/js/787.c20870d0.chunk.js": "/digital-agency/static/js/787.c20870d0.chunk.js",
+    "static/media/footer.webp": "/digital-agency/static/media/footer.d5a07c4a652b396eb756.webp",
+    "static/media/banner-1.jpg": "/digital-agency/static/media/banner-1.1a002080536a655fb56f.jpg",
+    "static/media/banner-2.webp": "/digital-agency/static/media/banner-2.26d9e724fd2971bd3fc1.webp",
+    "static/media/sign.png": "/digital-agency/static/media/sign.11a2545f44d9e826335d.png",
+    "static/media/slideTwo.webp": "/digital-agency/static/media/slideTwo.1f29c65586bbf9c8fdd3.webp",
+    "static/media/shape-1.png": "/digital-agency/static/media/shape-1.52d38e8d740a481780b4.png",
+    "static/media/shape-2.webp": "/digital-agency/static/media/shape-2.4b399037fd5c12a3d52a.webp",
+    "static/media/slideOne.webp": "/digital-agency/static/media/slideOne.60f4fa5dd2f57ebbe8cf.webp",
+    "index.html": "/digital-agency/index.html",
+    "main.5afbb6c4.css.map": "/digital-agency/static/css/main.5afbb6c4.css.map",
+    "main.342c897a.js.map": "/digital-agency/static/js/main.342c897a.js.map",
+    "787.c20870d0.chunk.js.map": "/digital-agency/static/js/787.c20870d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5afbb6c4.css",
+    "static/js/main.342c897a.js"
+  ]
+}
