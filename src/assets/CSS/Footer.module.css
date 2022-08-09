@@ -46,12 +46,18 @@ a:hover {
   cursor: pointer;
 }
 @media (max-width: 992px) {
+  footer {
+    height: auto;
+  }
   .footerMain {
     padding-top: 50px;
   }
 }
 
 @media (max-width: 768px) {
+  footer {
+    height: auto;
+  }
   .footerMain {
     flex-direction: column;
     padding-top: 70px;
