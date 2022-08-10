@@ -3,7 +3,7 @@
     "airbnb",
     "airbnb/hooks",
     "eslint:recommended",
-    "prettier",
+    //  "prettier",
     "plugin:jsx-a11y/recommended"
   ],
   "parser": "@babel/eslint-parser",
@@ -35,18 +35,19 @@
       {
         "extensions": [".js", ".jsx"]
       }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 2,
-        "semi": true,
-        "endOfLine": "auto"
-      }
     ]
+
+    // "prettier/prettier": [
+    //   "error",
+    //   {
+    //     "trailingComma": "es5",
+    //     "singleQuote": true,
+    //     "printWidth": 100,
+    //     "tabWidth": 2,
+    //     "semi": true,
+    //     "endOfLine": "auto"
+    //   }
+    // ]
   }
   // "plugins": ["prettier", "react", "react-hooks"]
   //  "plugins": ["prettier"]
