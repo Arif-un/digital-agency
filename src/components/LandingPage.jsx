@@ -1,6 +1,4 @@
-/* eslint-disable no-undef */
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/no-unescaped-entities */
+
 import styles from '../assets/CSS/Header.module.css';
 
 export default function LandingPage({ bannerImg }) {
