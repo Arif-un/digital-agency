@@ -15,9 +15,6 @@ export default function Header({ backgroundImg }) {
   //   console.log('menu', menu);
   //   menuList.classList.toggle('menuList');
   // };
-// alkd      jfa
-
-  
 
   return (
     <header style={{ backgroundImage: `url(${backgroundImg})` }}>
