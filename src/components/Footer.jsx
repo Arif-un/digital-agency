@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-
 import styles from '../assets/CSS/Footer.module.css';
 import logo from '../assets/images/logo.png';
 
