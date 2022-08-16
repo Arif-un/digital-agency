@@ -1,8 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import analysis from '../assets/images/analysis.png';
 import docs from '../assets/images/docs.png';
 import sketch from '../assets/images/sketch.png';
-
 import styles from '../assets/CSS/Services.module.css';
 
 function Services() {

@@ -1,10 +1,10 @@
-import analysis from '../assets/images/analysisTow.png';
-import development from '../assets/images/development.png';
-import design from '../assets/images/interface.png';
-import profile from '../assets/images/profile.png';
-import shape from '../assets/images/shape-2.webp';
+import analysis from '../assets/images/analysisTow.png'
+import development from '../assets/images/development.png'
+import design from '../assets/images/interface.png'
+import profile from '../assets/images/profile.png'
+import shape from '../assets/images/shape-2.webp'
 
-import styles from '../assets/CSS/OurServices.module.css';
+import styles from '../assets/CSS/OurServices.module.css'
 
 export default function OurServices() {
   return (
@@ -17,7 +17,11 @@ export default function OurServices() {
         <div className={styles.ourServiceContent}>
           <h6>OUR SERVICES</h6>
           <h2 className="mt-20">
-            We provide wide range of web & <br /> business services.
+            We provide wide range of web &
+            {' '}
+            <br />
+            {' '}
+            business services.
           </h2>
 
           <div className={`${styles.OurServicesSubContent} d-flex-between mt-30`}>
@@ -69,5 +73,5 @@ export default function OurServices() {
         </div>
       </div>
     </section>
-  );
+  )
 }
