@@ -3,7 +3,6 @@ import development from '../assets/images/development.png'
 import design from '../assets/images/interface.png'
 import profile from '../assets/images/profile.png'
 import shape from '../assets/images/shape-2.webp'
-
 import styles from '../assets/CSS/OurServices.module.css'
 
 export default function OurServices() {

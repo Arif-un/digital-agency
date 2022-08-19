@@ -1,4 +1,4 @@
-footer {
+.footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,21 +9,26 @@ footer {
 
   padding: 0 15%;
 }
+
 .footerMain {
   gap: 30px;
 }
+
 .footerCard ul li {
   line-height: 2;
 }
+
 .footerCard li:hover,
 a:hover {
   color: var(--primary-color);
 }
+
 .reserved {
   justify-content: space-between;
   gap: 30px;
   font-size: 20px;
 }
+
 .footerCard input {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -31,13 +36,16 @@ a:hover {
   text-align: left;
   background: transparent;
 }
+
 .footerCardIcon {
   margin-top: 30px;
 }
+
 .footerCardIcon li {
   display: inline-block;
   margin-right: 20px;
 }
+
 .top {
   position: fixed;
   right: 0;
@@ -45,10 +53,12 @@ a:hover {
   z-index: 1;
   cursor: pointer;
 }
+
 @media (max-width: 992px) {
   footer {
     height: auto;
   }
+
   .footerMain {
     padding-top: 50px;
   }
@@ -58,13 +68,16 @@ a:hover {
   footer {
     height: auto;
   }
+
   .footerMain {
     flex-direction: column;
     padding-top: 70px;
   }
+
   .footerCard input {
     width: 100%;
   }
+
   .footerEnd {
     flex-wrap: wrap-reverse;
     gap: 30px;
@@ -72,5 +85,5 @@ a:hover {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 576px) {
-}
+
+@media (max-width: 576px) {}
