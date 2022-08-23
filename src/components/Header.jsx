@@ -1,47 +1,65 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import { useState } from 'react';
-import bannerImg from '../assets/images/banner-1.jpg';
+import styles from '../assets/CSS/Header.module.css';
 import logo from '../assets/images/logo.png';
 import LandingPage from './LandingPage';
 
-export default function Header({ backgroundImg }) {
-  const [openMenu, setMenu] = useState(false);
+import Image from 'next/image';
 
-  // const openMenu = () => {
-  //   //  alert('Open Menu');
-  //   const menu = document.querySelector('.menu');
-  //   const menuList = document.querySelector('.menuList');
-  //   console.log('menu', menu);
-  //   menuList.classList.toggle('menuList');
-  // };
+export default function Header() {
+  const [openMenu, setMenu] = useState(false);
+  const getImage =  require("../assets/images/shape-1.png");
+
+
+if(openMenu === true){
+  window.addEventListener('click', (e) =>{
+
+    console.log(e.target.classList.contains('menuList'));
+
+    if(e.target.classList.contains('menuList')){
+
+      setMenu(false)
+    }
+
+  });
+
+}
+
+
+  const backgroundImageStyle = {
+    backgroundImage: `url(${JSON.stringify(getImage.default.src)})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "100%"
+  }
 
   return (
-    <header style={{ backgroundImage: `url(${backgroundImg})` }}>
+    <header className='header' style={backgroundImageStyle} >
       <div className="container pt-50">
         <div className="logo">
-          <img src={logo} alt="LOGO" />
-        </div>
-        <nav>
+       
+          <Image src={logo} alt="LOGO"/>
+         </div>
+        <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="index.html" className="border-btm-sm active">
+              <a href="#" className="border-btm-sm active">
                 Home
               </a>
             </li>
 
             <li>
-              <a className="border-btm-sm" href="services.html">
+              <a className="border-btm-sm" href="#">
                 Services
               </a>
             </li>
             <li>
-              <a className="border-btm-sm" href="services.html">
+              <a className="border-btm-sm" href="#">
                 Portfolio
               </a>
             </li>
             <li>
-              <a className="border-btm-sm" href="contact.html">
+              <a className="border-btm-sm" href="#">
                 Contact Us
               </a>
             </li>
@@ -51,10 +69,10 @@ export default function Header({ backgroundImg }) {
           </ul>
         </nav>
 
-        <LandingPage bannerImg={bannerImg} />
+        <LandingPage  />
 
+          {openMenu  ? (
         <div className="menuList">
-          {openMenu ? (
             <ul>
               <li>
                 <a href="index.html" className="border-btm-sm active">
@@ -75,11 +93,11 @@ export default function Header({ backgroundImg }) {
                 <a href="#">LOGIN</a>
               </li>
             </ul>
-          ) : null}
         </div>
+          ) : null}
 
         <div>
-          <button className="menu" onClick={() => setMenu(!openMenu)} type="button">
+          <button className="menu" onClick={(e) => setMenu(!openMenu)} type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"

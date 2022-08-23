@@ -1,7 +1,9 @@
+import styles from '../assets/CSS/Services.module.css';
 import analysis from '../assets/images/analysis.png';
 import docs from '../assets/images/docs.png';
 import sketch from '../assets/images/sketch.png';
-import styles from '../assets/CSS/Services.module.css';
+
+import Image from 'next/image';
 
 function Services() {
   return (
@@ -18,7 +20,8 @@ function Services() {
         <div className={styles.servicesItems}>
           <div className={styles.serviceItem}>
             <div className={styles.serviceImg}>
-              <img src={docs} alt="IMG" />
+
+            <Image src={docs} alt="IMG" />
             </div>
             <div className={`${styles.serviceContent} mt-20`}>
               <h4>Financial Advise</h4>
@@ -30,7 +33,9 @@ function Services() {
 
           <div className={styles.serviceItem}>
             <div className={styles.serviceImg}>
-              <img src={analysis} alt="IMG" />
+
+              <Image src={analysis} alt="IMG" />
+
             </div>
             <div className={`${styles.serviceContent} mt-20`}>
               <h4>Market Analysis</h4>
@@ -40,7 +45,11 @@ function Services() {
           <hr />
           <div className={styles.serviceItem}>
             <div className={styles.serviceImg}>
-              <img src={sketch} alt="IMG" />
+
+              <Image src={sketch} alt="IMG" />
+
+
+              
             </div>
             <div className={`${styles.serviceContent} mt-20`}>
               <h4>Web Solution</h4>

@@ -1,7 +1,9 @@
 import styles from '../assets/CSS/Footer.module.css';
 import logo from '../assets/images/logo.png';
 
-export default function Footer({ footerBackground }) {
+import Image from 'next/image';
+
+export default function Footer() {
   // scroll to top
   const scrollToTop = () => {
     window.scrollTo({
@@ -9,13 +11,31 @@ export default function Footer({ footerBackground }) {
       behavior: 'smooth',
     });
   };
+const getFooterBGImg = require("../assets/images/footer.webp")
+  const footerBackgroundImg = {
+
+    backgroundImage: `url(${JSON.stringify(getFooterBGImg.default.src)})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    height: "85vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "0 15%"
+
+  }
+
 
   return (
-    <footer style={{ backgroundImage: `url(${footerBackground})` }}>
+    <footer className={styles.footer} style={footerBackgroundImg}>
       <div className="container ">
         <div className={`${styles.footerMain} flex-wrap mt-50`}>
           <div className={styles.footerCard}>
-            <img src={logo} alt="LOGO" />
+         
+
+            <Image src={logo} alt="LOGO" />
+
             <ul className="mt-20">
               <li>
                 <b>gulluinc@gmail.com</b>

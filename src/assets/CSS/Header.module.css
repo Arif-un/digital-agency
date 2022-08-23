@@ -1,24 +1,26 @@
 /* ======== Style for the header ======== */
-header {
+/* .header {
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-}
-header .container img {
+} */
+.header .container .backgroundImg {
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
+  background-image: url("/src/assets/images/shape-1.png");
 }
-nav {
+.nav {
   float: right;
   margin-top: -40px;
 }
 
-nav ul li {
+.nav ul li {
   float: left;
   margin-left: 30px;
 }
-nav ul li a {
+.nav ul li a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 18px;
@@ -26,16 +28,16 @@ nav ul li a {
   text-transform: capitalize;
   background: transparent;
 }
-nav ul li a:hover::after {
+.nav ul li a:hover::after {
   content: "";
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
-nav ul li:last-child {
+.nav ul li:last-child {
   margin-top: -5px;
   padding: 5px;
 }
-nav ul li:last-child a {
+.nav ul li:last-child a {
   font-size: 12px;
   font-weight: bold;
 }
@@ -64,12 +66,12 @@ nav ul li:last-child a {
   line-height: 1.5;
   margin: 0;
   cursor: none;
-  display: inline-block;
+  display: block;
   position: relative;
-
   z-index: 1;
 }
-.banner .bannerContent ul li::before {
+
+/* .banner .bannerContent ul li::before {
   content: "";
   width: 100%;
   height: 10px;
@@ -79,7 +81,7 @@ nav ul li:last-child a {
   left: 0;
   bottom: 0;
   z-index: -1;
-}
+} 
 
 .bannerContent button:hover {
   transition: 1s ease-in-out;
@@ -94,35 +96,35 @@ nav ul li:last-child a {
 }
 
 @media (max-width: 1200px) {
-  .banner img {
+  .banner .headerBanner {
     width: 100%;
   }
 }
 @media (max-width: 992px) {
-  header {
+  .header {
     width: 90%;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
-  header {
+  .header {
     width: 90%;
     margin: 0 auto;
   }
-  .banner img {
-    width: 0;
+  .banner .headerBanner {
+    display: none;
   }
   .banner .bannerContent {
     width: 75%;
   }
-  nav ul li {
+  .nav ul li {
     margin-left: 20px;
     font-size: 16px;
   }
 }
 @media (max-width: 576px) {
-  header nav {
+  .nav {
     display: none;
   }
 }

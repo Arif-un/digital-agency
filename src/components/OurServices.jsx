@@ -1,16 +1,19 @@
+import styles from '../assets/CSS/OurServices.module.css'
 import analysis from '../assets/images/analysisTow.png'
 import development from '../assets/images/development.png'
 import design from '../assets/images/interface.png'
 import profile from '../assets/images/profile.png'
 import shape from '../assets/images/shape-2.webp'
-import styles from '../assets/CSS/OurServices.module.css'
+
+import Image from 'next/image'
 
 export default function OurServices() {
   return (
     <section className="ourServices m-t-b-50">
       <div className={styles.ourServices}>
         <div className={styles.ourServiceImg}>
-          <img src={shape} alt="IMG" />
+
+          <Image src={shape} alt="BANNER" />
         </div>
 
         <div className={styles.ourServiceContent}>
@@ -34,7 +37,7 @@ export default function OurServices() {
           <div className="flex-wrap mt-50">
             <div className={`${styles.serviceCard} d-flex-between`}>
               <div>
-                <img src={design} alt="IMG" />
+                <Image src={design} alt="IMG" />
               </div>
               <div className={`${styles.serviceCardContent} `}>
                 <h4>Interface Design</h4>
@@ -43,7 +46,7 @@ export default function OurServices() {
             </div>
             <div className={`${styles.serviceCard} d-flex-between`}>
               <div>
-                <img src={analysis} alt="IMG" />
+                <Image src={analysis} alt="IMG" />
               </div>
               <div className={styles.serviceCardContent}>
                 <h4>SEO & SMM services</h4>
@@ -52,7 +55,8 @@ export default function OurServices() {
             </div>
             <div className={`${styles.serviceCard} d-flex-between`}>
               <div>
-                <img src={development} alt="IMG" />
+
+                <Image src={development} alt="IMG" />
               </div>
               <div className={styles.serviceCardContent}>
                 <h4>Apps Development</h4>
@@ -61,7 +65,9 @@ export default function OurServices() {
             </div>
             <div className={`${styles.serviceCard} d-flex-between`}>
               <div>
-                <img src={profile} alt="IMG" />
+
+                <Image src={profile} alt="IMG" />
+
               </div>
               <div className={styles.serviceCardContent}>
                 <h4>Business Consulting</h4>

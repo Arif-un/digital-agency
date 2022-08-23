@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image';
 import styles from '../assets/CSS/OurNews.module.css';
 import profileOne from '../assets/images/6.jpg';
 import profileTwo from '../assets/images/7.jpg';
 import profileThree from '../assets/images/8.jpg';
 import profileFour from '../assets/images/9.jpg';
-
 export default function OurNews() {
   return (
     <section className={`${styles.ourNews} m-t-b-50`}>
@@ -17,8 +17,9 @@ export default function OurNews() {
 
         <div className={`${styles.ourNewsCardContainer} flex-wrap pt-50`}>
           <div className={`${styles.newsCard} d-flex-between mb-80`}>
-            <div>
-              <img src={profileOne} alt="IMG" />
+            <div className={styles.profileImg}>
+              <Image src={profileOne} alt="Profile" />
+
             </div>
             <div className={`${styles.serviceCardContent}`}>
               <p>Rashed Ka.</p>
@@ -32,8 +33,11 @@ export default function OurNews() {
             </div>
           </div>
           <div className={`${styles.newsCard} d-flex-between mb-80`}>
-            <div>
-              <img src={profileTwo} alt="IMG" />
+          <div className={styles.profileImg}>
+
+
+              <Image src={profileTwo} alt="Profile" />
+
             </div>
             <div className={styles.serviceCardContent}>
               <p>Jannatul Fa.</p>
@@ -51,8 +55,11 @@ export default function OurNews() {
             </div>
           </div>
           <div className={`${styles.newsCard} d-flex-between mb-80`}>
-            <div>
-              <img src={profileThree} alt="IMG" />
+          <div className={styles.profileImg}>
+
+
+              <Image src={profileThree} alt="Profile" />
+
             </div>
             <div className={styles.serviceCardContent}>
               <p>Fred Johnston</p>
@@ -70,8 +77,11 @@ export default function OurNews() {
             </div>
           </div>
           <div className={`${styles.newsCard} d-flex-between mb-0`}>
-            <div>
-              <img src={profileFour} alt="IMG" />
+          <div className={styles.profileImg}>
+
+
+              <Image src={profileFour} alt="Profile" />
+
             </div>
             <div className={styles.serviceCardContent}>
               <p>Austin Cross</p>

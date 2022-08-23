@@ -129,7 +129,7 @@ section {
   overflow: hidden;
   clear: both;
 }
-header {
+.header {
   overflow: hidden;
   clear: both;
 }
@@ -158,7 +158,7 @@ ul {
   padding: 0;
 }
 
-nav ul {
+.nav ul {
   list-style: none;
 }
 .forIcon {
@@ -203,11 +203,11 @@ h6:before {
   z-index: -1;
 }
 
-header {
+.header {
   position: relative;
 }
 
-header .menu {
+.header .menu {
   position: absolute;
   top: 7%;
   right: 2%;
@@ -215,12 +215,13 @@ header .menu {
   background-color: #fff;
   display: none;
 }
-header .menu button {
+.header .menu button {
   cursor: pointer;
   border: none;
   background-color: #fff;
 }
 .menuList {
+  background-color: #00d747;
   position: absolute;
   top: 18%;
   left: 0;
@@ -241,6 +242,7 @@ header .menu button {
 .menuList ul li {
   margin-bottom: 15px;
 }
+
 /* all media queries breakpoints for responsive  */
 /* 
 @media screen and (max-width: 360px) {
@@ -320,7 +322,7 @@ header .menu button {
     max-width: 520px;
     margin: auto;
   }
-  header .menu {
+  .header .menu {
     display: block;
   }
 }

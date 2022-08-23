@@ -6,12 +6,17 @@ import styles from '../assets/CSS/Testimonial.module.css';
 import bannerImg from '../assets/images/banner-2.webp';
 import clientProfileOne from '../assets/images/clientOne.jpg';
 
+
+
+import Image from 'next/image';
+
 export default function Testimonianls() {
   return (
     <section className="m-t-b-50">
       <div className={`${styles.testimonials} d-flex-between`}>
         <div className={styles.testimonialsBanner}>
-          <img src={bannerImg} alt="" />
+          <Image src={bannerImg} alt="Profile" />
+
         </div>
 
         <div className={styles.testimonialsContent}>
@@ -88,7 +93,9 @@ export default function Testimonianls() {
                           className={`${styles.testimonialsSliderAuthorProfile} d-flex-between `}
                         >
                           <div>
-                            <img src={clientProfileOne} alt="" />
+
+                            <Image src={clientProfileOne} alt="Profile" />
+
                           </div>
                           <div>
                             <p>

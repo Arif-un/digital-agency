@@ -1,7 +1,12 @@
 
-import styles from '../assets/CSS/Header.module.css';
 
-export default function LandingPage({ bannerImg }) {
+import styles from '../assets/CSS/Header.module.css';
+import bannerImg from '../assets/images/banner-1.jpg';
+
+
+import Image from 'next/dist/client/image';
+
+export default function LandingPage() {
     return (
         //  main-header
 
@@ -10,18 +15,20 @@ export default function LandingPage({ bannerImg }) {
                 <p>We'r Awesome</p>
 
                 <ul>
-                    <li className="border-btm-lg active">Digital Agency</li>
-                    <li className="border-btm-lg ">That Help You To</li>
-                    <li className="border-btm-lg ">Go Ahead</li>
+                    <li >Digital Agency</li>
+                    <li >That Help You To</li>
+                    <li >Go Ahead</li>
                 </ul>
 
                 <button type="button" className="btn-lg mt-50">
                     Explore Now
                 </button>
             </div>
-            <div >
+            <div className={styles.headerBanner} >
+
+                <Image src={bannerImg} alt="BANNER"  />
                
-                <img src={bannerImg} alt="" />
+               
             </div>
         </div>
     );

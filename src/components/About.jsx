@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Image from 'next/dist/client/image';
 import styles from '../assets/CSS/About.module.css';
 import bannerImg from '../assets/images/banner-2.webp';
 import sign from '../assets/images/sign.png';
@@ -10,7 +11,10 @@ function About() {
     <section className="m-t-b-50 pt-100">
       <div className={`${styles.about}  d-flex-between`}>
         <div className={styles.aboutImg}>
-          <img src={bannerImg} alt="Banner" />
+
+
+          <Image src={bannerImg} alt="Banner"/>
+
         </div>
 
         <div className={styles.aboutContent}>
@@ -48,7 +52,7 @@ function About() {
 
           <div className={`${styles.sign} d-flex-between`}>
             <div>
-              <img src={sign} alt="BANNER" />
+              <Image src={sign} alt="BANNER" />
             </div>
 
             <div className={styles.moreBtn}>

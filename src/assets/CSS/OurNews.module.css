@@ -16,6 +16,11 @@
   justify-content: space-around;
   gap: 30px;
 }
+.newsCard .profileImg {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
 /* .newsCard h4::after {
   content: "";
   display: block;
