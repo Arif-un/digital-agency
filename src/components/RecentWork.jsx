@@ -1,13 +1,13 @@
 /* eslint-disable import/no-unresolved */
-import { Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from '../assets/CSS/Recent.module.css';
-import slideItemOne from '../assets/images/slideOne.webp';
-import slideItemTwo from '../assets/images/slideTwo.webp';
+import { Autoplay } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import styles from '../assets/CSS/Recent.module.css'
+import slideItemOne from '../assets/images/slideOne.webp'
+import slideItemTwo from '../assets/images/slideTwo.webp'
 // Import Swiper React components
 
 // Import Swiper styles
-import 'swiper/css';
+import 'swiper/css'
 
 function RecentWork() {
   return (
@@ -16,7 +16,9 @@ function RecentWork() {
         <div className={`${styles.recentWorkHead} d-flex-between`}>
           <div>
             <h6>Recent Work</h6>
-            <h2>We’ve done lot’s of work, Let’s </h2> <h2> Check some from here</h2>
+            <h2>We’ve done lot’s of work, Let’s </h2>
+            {' '}
+            <h2> Check some from here</h2>
           </div>
 
           <div>
@@ -105,7 +107,7 @@ function RecentWork() {
         </Swiper>
       </div>
     </section>
-  );
+  )
 }
 
-export default RecentWork;
+export default RecentWork

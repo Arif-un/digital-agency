@@ -1,7 +1,6 @@
-import styles from '../assets/CSS/Footer.module.css';
-import logo from '../assets/images/logo.png';
-
-import Image from 'next/image';
+import Image from 'next/image'
+import styles from '../assets/CSS/Footer.module.css'
+import logo from '../assets/images/logo.png'
 
 export default function Footer() {
   // scroll to top
@@ -9,31 +8,26 @@ export default function Footer() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-    });
-  };
-const getFooterBGImg = require("../assets/images/footer.webp")
-  const footerBackgroundImg = {
-
-    backgroundImage: `url(${JSON.stringify(getFooterBGImg.default.src)})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    height: "85vh",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "0 15%"
-
+    })
   }
-
+  const getFooterBGImg = require('../assets/images/footer.webp')
+  const footerBackgroundImg = {
+    backgroundImage: `url(${JSON.stringify(getFooterBGImg.default.src)})`,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    height: '85vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '0 15%',
+  }
 
   return (
     <footer className={styles.footer} style={footerBackgroundImg}>
       <div className="container ">
         <div className={`${styles.footerMain} flex-wrap mt-50`}>
           <div className={styles.footerCard}>
-         
-
             <Image src={logo} alt="LOGO" />
 
             <ul className="mt-20">
@@ -65,7 +59,11 @@ const getFooterBGImg = require("../assets/images/footer.webp")
           </div>
           <div className={styles.footerCard}>
             <h3>Subscribe Us</h3>
-            <input className="mt-20" type="text" placeholder="Enter your email" />
+            <input
+              className="mt-20"
+              type="text"
+              placeholder="Enter your email"
+            />
             <ul className={styles.footerCardIcon}>
               <li>
                 <svg
@@ -137,17 +135,22 @@ const getFooterBGImg = require("../assets/images/footer.webp")
           <div className={`${styles.reserved} flex-wrap `}>
             <div>
               <h3>
-                <span className="primaryColor">9087 </span>Products
+                <span className="primaryColor">9087 </span>
+                Products
               </h3>
             </div>
             <div>
               <h3>
-                <span className="primaryColor">54288</span> Members
+                <span className="primaryColor">54288</span>
+                {' '}
+                Members
               </h3>
             </div>
             <div>
               <h3>
-                <span className="primaryColor">1121 </span> Shops
+                <span className="primaryColor">1121 </span>
+                {' '}
+                Shops
               </h3>
             </div>
           </div>
@@ -169,5 +172,5 @@ const getFooterBGImg = require("../assets/images/footer.webp")
         </svg>
       </div>
     </footer>
-  );
+  )
 }

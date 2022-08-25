@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable import/no-unresolved */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import Image from 'next/dist/client/image';
-import styles from '../assets/CSS/About.module.css';
-import bannerImg from '../assets/images/banner-2.webp';
-import sign from '../assets/images/sign.png';
+import Image from 'next/image'
+import styles from '../assets/CSS/About.module.css'
+import bannerImg from '../assets/images/banner-2.webp'
+import sign from '../assets/images/sign.png'
 
 function About() {
   return (
@@ -12,8 +12,7 @@ function About() {
       <div className={`${styles.about}  d-flex-between`}>
         <div className={styles.aboutImg}>
 
-
-          <Image src={bannerImg} alt="Banner"/>
+          <Image src={bannerImg} alt="Banner" />
 
         </div>
 
@@ -59,7 +58,8 @@ function About() {
               <p>Learn More</p>
 
               <a href="#" className="forIcon">
-                MORE ABOUT US{' '}
+                MORE ABOUT US
+                {' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
@@ -82,7 +82,7 @@ function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default About;
+export default About

@@ -1,45 +1,37 @@
-
-import { useState } from 'react';
-import styles from '../assets/CSS/Header.module.css';
-import logo from '../assets/images/logo.png';
-import LandingPage from './LandingPage';
-
-import Image from 'next/image';
+import { useState } from 'react'
+import Image from 'next/image'
+import styles from '../assets/CSS/Header.module.css'
+import logo from '../assets/images/logo.png'
+import LandingPage from './LandingPage'
 
 export default function Header() {
-  const [openMenu, setMenu] = useState(false);
-  const getImage =  require("../assets/images/shape-1.png");
+  const [openMenu, setMenu] = useState(false)
+  const getImage = require('../assets/images/shape-1.png')
 
+  if (openMenu === true) {
+    window.addEventListener('click', (e) => {
+      console.log(e.target.classList.contains('menuList'))
 
-if(openMenu === true){
-  window.addEventListener('click', (e) =>{
-
-    console.log(e.target.classList.contains('menuList'));
-
-    if(e.target.classList.contains('menuList')){
-
-      setMenu(false)
-    }
-
-  });
-
-}
-
+      if (e.target.classList.contains('menuList')) {
+        setMenu(false)
+      }
+    })
+  }
 
   const backgroundImageStyle = {
     backgroundImage: `url(${JSON.stringify(getImage.default.src)})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    height: "100%"
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    height: '100%',
   }
 
   return (
-    <header className='header' style={backgroundImageStyle} >
+    <header className="header" style={backgroundImageStyle}>
       <div className="container pt-50">
         <div className="logo">
-       
-          <Image src={logo} alt="LOGO"/>
-         </div>
+
+          <Image src={logo} alt="LOGO" />
+        </div>
         <nav className={styles.nav}>
           <ul>
             <li>
@@ -69,10 +61,10 @@ if(openMenu === true){
           </ul>
         </nav>
 
-        <LandingPage  />
+        <LandingPage />
 
-          {openMenu  ? (
-        <div className="menuList">
+        {openMenu ? (
+          <div className="menuList">
             <ul>
               <li>
                 <a href="index.html" className="border-btm-sm active">
@@ -93,8 +85,8 @@ if(openMenu === true){
                 <a href="#">LOGIN</a>
               </li>
             </ul>
-        </div>
-          ) : null}
+          </div>
+        ) : null}
 
         <div>
           <button className="menu" onClick={(e) => setMenu(!openMenu)} type="button">
@@ -114,5 +106,5 @@ if(openMenu === true){
         </div>
       </div>
     </header>
-  );
+  )
 }

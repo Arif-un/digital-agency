@@ -1,14 +1,11 @@
 /* eslint-disable import/no-unresolved */
-import { Autoplay } from 'swiper';
-import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from '../assets/CSS/Testimonial.module.css';
-import bannerImg from '../assets/images/banner-2.webp';
-import clientProfileOne from '../assets/images/clientOne.jpg';
-
-
-
-import Image from 'next/image';
+import { Autoplay } from 'swiper'
+import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import Image from 'next/image'
+import styles from '../assets/CSS/Testimonial.module.css'
+import bannerImg from '../assets/images/banner-2.webp'
+import clientProfileOne from '../assets/images/clientOne.jpg'
 
 export default function Testimonianls() {
   return (
@@ -23,7 +20,11 @@ export default function Testimonianls() {
           <div className={styles.testimonialsHead}>
             <h6>TESTIMONIALS</h6>
             <h2>
-              Check what’s our client <br /> Say about us
+              Check what’s our client
+              {' '}
+              <br />
+              {' '}
+              Say about us
             </h2>
             <Swiper
               spaceBetween={30}
@@ -119,5 +120,5 @@ export default function Testimonianls() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,9 +1,8 @@
-import styles from '../assets/CSS/Services.module.css';
-import analysis from '../assets/images/analysis.png';
-import docs from '../assets/images/docs.png';
-import sketch from '../assets/images/sketch.png';
-
-import Image from 'next/image';
+import Image from 'next/image'
+import styles from '../assets/CSS/Services.module.css'
+import analysis from '../assets/images/analysis.png'
+import docs from '../assets/images/docs.png'
+import sketch from '../assets/images/sketch.png'
 
 function Services() {
   return (
@@ -21,7 +20,7 @@ function Services() {
           <div className={styles.serviceItem}>
             <div className={styles.serviceImg}>
 
-            <Image src={docs} alt="IMG" />
+              <Image src={docs} alt="IMG" />
             </div>
             <div className={`${styles.serviceContent} mt-20`}>
               <h4>Financial Advise</h4>
@@ -48,8 +47,6 @@ function Services() {
 
               <Image src={sketch} alt="IMG" />
 
-
-              
             </div>
             <div className={`${styles.serviceContent} mt-20`}>
               <h4>Web Solution</h4>
@@ -59,7 +56,7 @@ function Services() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Services;
+export default Services

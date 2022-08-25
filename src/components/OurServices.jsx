@@ -1,11 +1,10 @@
+import Image from 'next/image'
 import styles from '../assets/CSS/OurServices.module.css'
 import analysis from '../assets/images/analysisTow.png'
 import development from '../assets/images/development.png'
 import design from '../assets/images/interface.png'
 import profile from '../assets/images/profile.png'
 import shape from '../assets/images/shape-2.webp'
-
-import Image from 'next/image'
 
 export default function OurServices() {
   return (

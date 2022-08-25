@@ -1,4 +1,4 @@
-import styles from '../assets/CSS/Counter.module.css';
+import styles from '../assets/CSS/Counter.module.css'
 
 export default function Counter() {
   return (
@@ -25,5 +25,5 @@ export default function Counter() {
       </div>
       <hr />
     </section>
-  );
+  )
 }

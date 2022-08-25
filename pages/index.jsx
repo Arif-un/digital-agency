@@ -1,6 +1,5 @@
 /* eslint-disable import/extensions */
-//import '../src/assets/CSS/global.css'
-
+// import '../src/assets/CSS/global.css'
 
 // import backgroundImg from '../src/assets/images/shape-1.png'
 import About from '../src/components/About'
@@ -15,10 +14,9 @@ import OurServices from '../src/components/OurServices'
 import Testimonianls from '../src/components/Testimonianls'
 
 function App() {
-
   return (
     <div className="App">
-      
+
       <Header />
       <Services />
       <About />
