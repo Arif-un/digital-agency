@@ -29,9 +29,9 @@
       "error",
       "windows"
     ],
+    "react/prop-types": 0,
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/forbid-prop-types": "off",
     "react/require-default-props": [
       "error",
       {
