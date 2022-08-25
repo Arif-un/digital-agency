@@ -17,7 +17,7 @@ function About() {
         </div>
 
         <div className={styles.aboutContent}>
-          <h2>We’r a dynamic team of creatives people innovation & Marketing Expert.</h2>
+          <h2>We’r a dyasdasdnamic team of creatives people innovation & Marketing Expert.</h2>
 
           <div className={`${styles.aboutContentHead} mt-30`}>
             <div>
