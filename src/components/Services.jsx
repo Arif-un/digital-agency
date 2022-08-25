@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import styles from '../assets/CSS/Services.module.css'
 import analysis from '../assets/images/analysis.png'

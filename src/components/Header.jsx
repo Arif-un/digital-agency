@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import Image from 'next/image'
+import { useState } from 'react'
 import styles from '../assets/CSS/Header.module.css'
 import logo from '../assets/images/logo.png'
 import LandingPage from './LandingPage'
