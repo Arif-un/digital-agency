@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
+import Image from 'next/image'
 import { Autoplay } from 'swiper'
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Image from 'next/image'
 import styles from '../assets/CSS/Testimonial.module.css'
 import bannerImg from '../assets/images/banner-2.webp'
 import clientProfileOne from '../assets/images/clientOne.jpg'
@@ -68,18 +68,8 @@ export default function Testimonianls() {
                   {' '}
                   <div className={`${styles.testimonialsSlider} mt-50 d-flex-between`}>
                     <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="50"
-                        height="50"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M8.09 11.631H3.4c.08-4.67 1-5.44 3.87-7.14.33-.2.44-.62.24-.96a.687.687 0 0 0-.95-.24c-3.38 2-4.56 3.22-4.56 9.03v5.39c0 1.71 1.39 3.09 3.09 3.09h3c1.76 0 3.09-1.33 3.09-3.09v-3c0-1.75-1.33-3.08-3.09-3.08ZM18.909 11.631h-4.69c.08-4.67 1-5.44 3.87-7.14.33-.2.44-.62.24-.96a.698.698 0 0 0-.96-.24c-3.38 2-4.56 3.22-4.56 9.04v5.39c0 1.71 1.39 3.09 3.09 3.09h3c1.76 0 3.09-1.33 3.09-3.09v-3c.01-1.76-1.32-3.09-3.08-3.09Z"
-                          fill="#00d747"
-                        />
-                      </svg>
+                    <Image src={require('../assets/icons/qutetion.svg')} height={250} width={250}  />
+                      
                     </div>
                     <div className="testimonialsSliderContent">
                       <p>

@@ -24,7 +24,7 @@ function Services() {
               <Image src={docs} alt="IMG" />
             </div>
             <div className={`${styles.serviceContent} mt-20`}>
-              <h4>Financial Advise</h4>
+              <h4>Financial  Advise</h4>
               <p>Market Statics Growth & Advance Analysis</p>
             </div>
           </div>
