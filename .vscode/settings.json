@@ -25,5 +25,8 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
