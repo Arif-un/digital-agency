@@ -9,8 +9,7 @@
     "plugin:@next/next/recommended",
     "next/core-web-vitals",
     "airbnb",
-    "plugin:react-hooks/recommended",
-    "react-app"
+    "plugin:react-hooks/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {

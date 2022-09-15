@@ -31,6 +31,9 @@ export default function OurNews() {
                 Their testimonial videos aren't production quality, but they get message across,
                 cover useful & relevant information with tips.
               </p>
+              <a href="#">
+                <p className="moreDetails">More Details</p>
+              </a>
             </div>
           </div>
           <div className={`${styles.newsCard} d-flex-between mb-80`}>
