@@ -100,7 +100,7 @@ export default function Testimonianls() {
                           </div>
                           <div>
                             <p>
-                              <b>John Doe</b>
+                              <b>Nazmul Hassan</b>
                             </p>
                             <p>CEO, Company</p>
                           </div>
