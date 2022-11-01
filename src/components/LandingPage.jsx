@@ -11,7 +11,7 @@ export default function LandingPage() {
         <p>We'r Awesome</p>
 
         <ul>
-          <li>Digital Agency</li>
+          <li>Digital Marketing Agency</li>
           <li>That Help You To</li>
           <li>Go Ahead</li>
         </ul>

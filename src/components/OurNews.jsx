@@ -85,7 +85,7 @@ export default function OurNews() {
 
             </div>
             <div className={styles.serviceCardContent}>
-              <p>Austin Cross</p>
+              <p>Ashraful Islam</p>
               <h4>
                 <a href="#">Challange yourself to win the future</a>
               </h4>
